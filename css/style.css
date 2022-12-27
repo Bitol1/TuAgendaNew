@@ -1,0 +1,65 @@
+/* Se importa la tipografía deseada para pisar la de Bootstrap */
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap');
+
+/* Se establece una tipografía específica para la totalidad del documento */
+*{
+    font-family: 'Blinker', sans-serif;
+}
+/* Se modifica el color de fondo para la barra de navegación, se usará el mismo para el footer */
+.tuAgenda{
+    background-color: rgb(211, 158, 158);
+    font-size: 1.8rem;
+}
+
+.navbar-brand{
+    color: black;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+/* Se modifica el color x defecto de bootstrap del hover del logo*/
+.tuAgenda a:hover {
+    color: black;
+}
+/* Se modifica el color de la fuente*/
+.nav-link{
+color: black;
+}
+
+/* Se modifica el color de los ítems asociados */
+.nav-item{
+    color: black;
+}
+
+/* Se modifica el color de los links al momento de posicionar el cursor */
+.ml-auto a:hover {
+    color: white;
+}
+
+/* Se configura el respectivo main */
+ main{
+    background-color: black;
+    height: 800px;
+} 
+
+/* Modificamos la altura de las imágenes */
+.slide{
+    margin-top: 10px;
+}
+
+
+.mainLink, .secondaryLink, .thirdLink{
+color: white;
+font-size: 21pt;
+}
+
+/* Agregamos otro background color para el formulario de contacto*/
+.contactForm{
+    background-color: azure;
+}
+
+/* Probamos el background color para los footers */
+.footerTuAgenda{
+    background-color: rgb(211, 158, 158);
+    color: black;
+    height: 120px;
+}

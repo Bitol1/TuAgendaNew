@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Declaramos la hoja de contenido para llamar a los iconos de redes sociales, más adelante se usaran botones de BS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Declaramos la hoja de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Declaramos la hoja de estilos sobre el final para pisar los estilos de BS -->
+    <link rel="stylesheet" href="style.css"> 
+    <title>TuAgenda</title>
+</head>
+<body>
+    <body>
+        <!-- Declaramos la barra de navegación -->
+        <nav class="navbar navbar-expand-lg tuAgenda">
+          <a class="navbar-brand" href="index.html">TuAgenda</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Se incluye un nuevo botón, más acorde con el sitio -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link" href="#">Cine</a>
+              <a class="nav-link" href="#">Música</a>
+              <a class="nav-link" href="#">Teatro</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </div>
+          </div>
+        </nav>
+    <!-- Declaramos el main e incluimos el formulario de contacto -->
+        <main class="container-fluid contactForm">
+            <form>
+                <h2>Seamos amigos</h2>
+                <h3 m-auto>Suscribite a TuAgenda</h3>
+                <div class="form-group">
+                  <!-- Incluimos los inputs -->
+                <label for="exampleInputEmail1">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Inserta aquí tu nombre">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserta aquí tu email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información con nadie.</small>
+                </div>
+                <!-- Incluimos los checkpoints para selección de intereses -->
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Cine">
+                    <label class="form-check-label" for="inlineCheckbox1">Cine</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Música">
+                    <label class="form-check-label" for="inlineCheckbox2">Música</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Teatro">
+                    <label class="form-check-label" for="inlineCheckbox3">Teatro</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Dame todo">
+                    <label class="form-check-label" for="inlineCheckbox3">Dame todo</label>
+                  </div>
+                <button type="submit" class="btn btn-primary">Suscribirme!</button>
+              </form>
+        </main>
+
+
+
+    <!-- Desarrollamos el footer con bootstrap y containers fluidos -->
+    <footer class="container-fluid footerTuAgenda">
+    <div class="row">
+        <div class="col-lg-3 d-flex justify-content-center d-flex align-items-center m-auto">Todos los derechos reservados</div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3 d-flex justify-content-between d-flex align-items-center m-auto">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>  
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
